@@ -1,0 +1,44 @@
+:root{
+    --circleDiametr: 100px;
+    --distance: 10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+    box-sizing: border-box;
+}
+.area-ball{
+    width: calc(var(--circleDiametr) * 7 + var(--distance) * 7);
+    min-height: calc(var(--circleDiametr) + var(--distance));
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.red-circle{
+    margin: var(--distance) 0px 0px var(--distance);
+    width: var(--circleDiametr);
+    height: var(--circleDiametr);
+
+    border-radius: 50%;
+    background-color: red;
+}
+.buttons{
+    padding: 20px 15px;
+
+    display: flex;
+}
+button{
+    margin-left: 15px;
+    padding: 6px;
+
+    cursor: pointer;
+    border: 3px solid black;
+}
